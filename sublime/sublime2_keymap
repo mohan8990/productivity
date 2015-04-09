@@ -1,0 +1,36 @@
+[
+  { "keys": ["f12"], "command": "htmlprettify"},
+  { "keys": ["f1"], "command": "fold" },
+  { "keys": ["f2"], "command": "unfold" },
+  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+  
+  { "keys": ["super+space"], "command": "auto_complete" },
+  { "keys": ["super+space"], "command": "replace_completion_with_auto_complete", "context":
+    [
+      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+      { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": true } },
+  { "keys": ["super+shift+f"], "command": "reindent" , "args": {"single_line": false}},
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+  { "keys": ["super+alt+j"], "command": "join_lines" },
+  { "keys": ["super+alt+down"], "command": "duplicate_line" },
+  
+  { "keys": ["super+shift+s"], "command": "save_all" },
+  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["shift+super+f4"], "command": "close_all" },
+  { "keys": ["shift+super+y"], "command": "lower_case" },
+  { "keys": ["shift+super+x"], "command": "upper_case" },
+  { "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+  { "keys": ["f3"], "command": "go_to_function" },
+  { "keys": ["super+left"], "command": "navigation_history_back"},
+  { "keys": ["super+right"], "command": "navigation_history_forward"},
+  { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} }
+
+]
