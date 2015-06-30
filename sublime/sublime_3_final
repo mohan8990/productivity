@@ -1,0 +1,9 @@
+[
+	{ "keys": ["super+shift+t"], "command": "goto_symbol_in_project" },
+	{ "keys": ["f3"], "command": "goto_definition" },
+	{ "keys": ["super+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys": ["super+t"], "command": "clone_file" }
+]
